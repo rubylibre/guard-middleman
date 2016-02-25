@@ -65,6 +65,7 @@ module Guard
         cmd << "--glob=#{@options[:glob]}" if @options[:glob]
         cmd << "--instrument=#{@options[:instrument]}" if @options[:instrument]
         cmd << '--profile' if @options[:profile]
+        cmd << "--environment=#{@options[:environment]}" if @options[:environment]
 
         cmd.join(' ')
       end
